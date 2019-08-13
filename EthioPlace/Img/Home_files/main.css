@@ -1,0 +1,65 @@
+.Ethio_h2{
+    color: #cc005f;
+    text-align: center;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    background-color: #cc005f;
+    color: white;
+}
+
+/* Validation*/
+label.error{
+    color: #cc005f;
+    font-weight: bold;
+}
+input.error,
+select.error,
+textarea.error{
+    border: 1px solid red;
+}
+.btnAddCalender{
+   background-color: red;
+}
+
+/* table styles for about page */
+.tablerow {
+    display: inline-block;
+    width: 100%;
+}
+.left-table {
+    text-align: right;
+    width: 25%; float: left;
+    padding-right: 2%;
+    font-weight: bold;
+}
+.right-table {
+    text-align: left;
+    width: 73%; float: left;
+}
+
+/* bottom back and next buttons */
+.previous-btn {
+    float: left;
+}
+.next-btn {
+    float: right;
+}
+
+/* toggle buttons styles */
+.ui-collapsible-heading-toggle {
+    border: none;
+}
+
+/* ui component tweaks */
+.ui-textalign-left {
+    text-align: left;
+}
+
+/* portfolio item right button stlye fix */
+.portfolio-item .ui-btn-icon-notext {
+    padding: 0 !important;
+}

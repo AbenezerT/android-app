@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <title>EthioPlace</title>
+        <!--jQuery-->
+        <script src="js/lib/jquery-2.1.4.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/lib/jquery.validate.js"></script>
+        <script src="js/Validation.js"></script>
+        <script src="js/Database.js"></script>
+        <script src="js/facade.js"></script>
+        <script src="js/EthioPlaceDAL.js"></script>
+        <!--jQuery mobile-->
+        <script src="js/lib/jquery.mobile-1.4.5.js"></script>
+        <!--jQuery mobile css-->
+        <link href="main.css" rel="stylesheet">
+        <link href="css/lib/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+
+<body>
+
+<!--Home page-->
+<div data-role="page" id="Home">
+    <header style="background-color: #cc005f; color: #fff;" data-position="fixed" data-role="header" data-theme="b">
+        <h1>Home</h1>
+        <div id="other-color" data-iconpos="top" data-role="navbar">
+            <ul>
+                <li><a class="ui-btn-active ui-state-persist" data-icon="home" href="#Home">Home</a></li>
+                <li><a data-icon="plus" href="#Places">Places</a></li>
+                <li><a data-icon="grid" href="#Reminders">Memo</a></li>
+                <li><a data-icon="calendar" href="#Calendar">Calendar</a></li>
+                <li><a data-icon="user" href="#About">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <section data-role="content">
+
+
+        <h2 class="Ethio_h2">Ethiopia</h2>
+        <p> Ethiopia is Africa's oldest independent country and its second largest in terms of population. Apart from a
+            five-year occupation by Mussolini's Italy, it has never been colonised.</p>
+
+        <img alt="Ethio" class="img" src="Img/Ethio_img.jpg">
+
+        <p>It has a unique cultural heritage, being the home of the Ethiopian Orthodox Church - one of the oldest
+            Christian denominations - and a monarchy that ended only in the coup of 1974.
+
+            It served as a symbol of African independence throughout the colonial period, and was a founder member of
+            the United Nations and the African base for many international organisations.
+
+            Drought and civil conflict left Ethiopia in a state of turmoil until 1991, when the long authoritarian rule
+            of Meles Zenawi brought a degree of stability.
+
+            Since 2018, Prime Minister Abiy Ahmed has launched a campaign of political liberalisation at home and sought
+            to end disputes with Ethiopia's neighbours, in particular Eritrea.</p>
+
+
+        <iframe frameborder="" height="500"
+                marginheight=""
+                marginwidth="0" scrolling="no"
+                src="https://maps.google.com/maps?q=Ethiopia&t=&z=5&ie=UTF8&iwloc=&output=embed" width="320"></iframe>
+        <h2 class="Ethio_h2">Ethiopia population 2019</h2>
+
+        <p>During 2019 Ethiopia population is projected to increased by 2,744,885 people and reach 111,238,354 in the
+            beginning of 2020. The natural increase is expected to be positive, as the number of births will exceed the
+            number of deaths by 2,758,989. If external migration will remain on the previous year level, the population
+            will be declined by 14,104 due to the migration reasons. It means that the number of people who leave
+            Ethiopia to settle permanently in another country (emigrants) will prevail over the number of people who
+            move into the country (to which they are not native) in order to settle there as permanent residents
+            (immigrants).</p>
+        <h2 class="Ethio_h2">Population change rates in 2019</h2>
+        <div>
+            <ul>
+                <li>
+                    <h3>9,880 live births average per day (411.68 in an hour)</h3>
+                </li>
+                <li>
+                    <h3>2,321 deaths average per day (96.73 in an hour)</h3>
+                </li>
+                <li>
+                    <h3>-39 emigrants average per day (-1.61 in an hour)</h3>
+                </li>
+            </ul>
+        </div>
+        <div data-role="controlgroup" data-type="horizontal">
+            <a data-icon="plus" data-role="button" href="https://en.wikipedia.org/wiki/Ethiopia" id="MoreEthio"
+               style="background-color: #cc005f; color: white;">Discover more </a>
+        </div>
+
+    </section>
+    <footer style="background-color: #cc005f; color: #fff; " data-position="fixed" data-role="footer" data-theme="b">
+        <h1> Copyright &copy; EthioPlace </h1>
+    </footer>
+</div>
+
+
+<!--Places page-->
+<div data-role="page" id="Places">
+    <header style="background-color: #cc005f; color: #fff; " data-position="fixed" data-role="header" data-theme="b">
+        <h1>Places</h1>
+        <div data-iconpos="top" data-role="navbar">
+            <ul>
+                <li><a data-icon="home" href="#Home">Home</a></li>
+                <li><a class="ui-btn-active ui-state-persist" data-icon="plus" href="#Places">Places</a></li>
+                <li><a data-icon="grid" href="#Reminders">Memo</a></li>
+                <li><a data-icon="calendar" href="#Calendar">Calendar</a></li>
+                <li><a data-icon="user" href="#About">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <section data-role="content">
+
+        <h2 class="Ethio_h2">Places To Visit </h2>
+
+        <div data-content-theme="d" data-role="collapsible-set" data-theme="c">
+            <div data-role="collapsible">
+                &#9733;<h3>2019 Winning place to visit in Ethiopia </h3>
+                <h2 id="Image"></h2>
+            </div>
+
+        </div>
+        <h3 class="Name1">AXUM</h3>
+        <h3 class="Location1">Aksum, Ethiopia</h3>
+        <p>Situated in the highlands of northern Ethiopia, Aksum symbolizes the wealth and importance of the
+            civilization of the ancient Aksumite kingdom, which lasted from the 1st to the 8th centuries AD. The kingdom
+            was at the crossroads of the three continents: Africa, Arabia and the Greco-Roman World, and was the most
+            powerful state between the Eastern Roman Empire and Persia. In command of the ivory trade with Sudan, its
+            fleets controlled the Red Sea trade through the port of Adulis and the inland routes of north eastern
+            Africa.</p>
+        <img class="img" src="Img/Axum1.jpg">
+
+
+        <div data-content-theme="d" data-role="collapsible-set" data-theme="b">
+            <div data-role="collapsible">
+
+                <h3>Discover More about AXUM</h3>
+                <h3>AXUM</h3>
+
+                <p>The largest standing obelisk rises to a height of over 23 meters and is exquisitely carved to
+                    represent a nine-storey building of the Aksumites. It stands at the entrance of the main stelae
+                    area. The largest obelisk of some 33 meters long lies where it fell, perhaps during the process of
+                    erection. It is possibly the largest monolithic stele that ancient human beings ever attempted to
+                    erect. A series of inscription on stone tablets have proved to be of immense importance to
+                    historians of the ancient world.</p>
+                <img class="img" src="Img/Axum.jpg">
+                <p>Some of them include trilingual text in Greek, Sabaean and Ge'ez (Classical Ethiopian), inscribed by
+                    King Ezana in the 4th century AD. The introduction of Christianity in the 4th century AD resulted in
+                    the building of churches, such as Saint Mary of Zion, rebuilt in the Gondarian period, in the 17th
+                    century AD, which is believed to hold the Ark of the Covenant. Aksum is a city in northern Ethiopia.
+                    It's known for its tall, carved obelisks, relics of the ancient Kingdom of Aksum. Most are in the
+                    northern Stelae Park, including a huge fallen pillar, now in pieces. Centuries-old St. Mary of Zion
+                    is a Christian church and pilgrimage site believed to have housed the biblical Ark of the Covenant.
+                    The neighboring Chapel of the Tablet is said to contain the Ark today.</p>
+                <iframe frameborder="" height="500"
+                        marginheight=""
+                        marginwidth="0" scrolling="no"
+                        src="https://maps.google.com/maps?q=Aksum&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="300"></iframe>
+
+
+            </div>
+        </div>
+
+        <div data-role="controlgroup" data-type="horizontal">
+            <a data-icon="calendar" data-role="button" href="#Reminders" id="calander1"
+               style="background-color: #cc005f; color: white;">Add To Calender</a>
+        </div>
+        <h3 class="Name2">LALIBELA CHURCH</h3>
+        <h4 class="Location2">Church of Saint George, Lalibela</h4>
+
+        <p>Lalibela is a town in Amhara Region, northern Ethiopia famous for monolithic rock-cut churches. The whole of
+            Lalibela offers an exceptional testimony to the medieval and post-medieval civilization of Ethiopia.Lalibela
+            is one of Ethiopia's holiest cities, second only to Aksum, and a center of pilgrimage.The population of
+            Lalibela is almost completely Ethiopian Orthodox Christian. Ethiopia is one of the earliest nations to adopt
+            Christianity in the first half of the fourth century, and its historical roots date to the time of the
+            Apostles. </p>
+        <img class="img" src="Img/Lalibela.jpg">
+
+        <div data-content-theme="d" data-role="collapsible-set" data-theme="b">
+            <div data-role="collapsible">
+                <h3>Discover More about Lalibela </h3>
+                <h3>Lalibela</h3>
+
+                <p>The churches themselves date from the seventh to thirteenth centuries, and are traditionally dated to
+                    the reign of the Zagwe dynasty king Gebre Mesqel Lalibela (1181–1221 AD). The layout and names of
+                    the major buildings in Lalibela are widely accepted, especially by local clergy, to be a symbolic
+                    representation of Jerusalem. This has led some experts to date the current church forms to the years
+                    following the capture of Jerusalem in 1187 by Muslim leader, Saladin. Lalibela is located in the
+                    Semien Wollo Zone of the Amhara Region, at roughly 2,500 meters above sea level. It is the main town
+                    in Lasta woreda, which was formerly part of Bugna woreda. The Rock-Hewn Churches were declared a
+                    UNESCO World Heritage Site in 1978.</p>
+                <img class="img" src="Img/Lalibela2.png">
+                <p>Ethiopia enjoys a mild climate, with average temperatures below 20°C in the highlands. This number
+                    can rise past 30°C on the lowland fringes of eastern, southern and western Ethiopia. Generally the
+                    best time to visit is between October and June, when it is the dry season. Rains tend to stop in
+                    early October, meaning afterwards the highlands are lush and green – perfect for trekking amongst
+                    pretty wildflowers that have sprung up. Be sure to bring a sweater all year round due to Ethiopia’s
+                    elevation. If you’d like to visit during a festival, Ethiopia hosts some jubilant celebrations
+                    from the Timkat festival in January, celebrated by orthodox Christians to the Hidar Tsion; a
+                    pilgrimage to Axum by Ethiopians from all over the country.</p>
+                <iframe frameborder="" height="500"
+                        marginheight=""
+                        marginwidth="0" scrolling="no"
+                        src="https://maps.google.com/maps?q=Church%20of%20Saint%20George%2C%20Lalibela&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        WIDTH="300"></iframe>
+            </div>
+
+            <div data-role="controlgroup" data-type="horizontal">
+                <a data-icon="calendar" data-role="button" data-theme="a" href="#Reminders" id="calander2"
+                   id="First" style="background-color: #cc005f; color: white;">Add To Calender</a>
+            </div>
+        </div>
+        <h3 class="Name3">FASILIDES CASTLE</h3>
+        <h3 class="Location3">Fasil Ghebbi, Ethiopia</h3>
+
+        <p>Fasilides Castle is a stunning tourist destination in Ethiopia. It is an old castle built in 17th century for
+            the Ethiopian emperor Fasilides Alam Sagad. The castle can be found in Gondar, Amhara Region. The castle’s
+            structure is purely made of stone. Definitely, Fasilides Castle is a representation of Ethiopia’s great
+            history.</p>
+        <img class="img" src="Img/Fasiledes2.jpg">
+
+
+        <div data-content-theme="d" data-role="collapsible-set" data-theme="b">
+            <div data-role="collapsible">
+
+                <h3>Discover More About Fasilides </h3>
+                <h3>FASILIDES CASTLE</h3>
+
+                <p>Gondar Ethiopia, Recognised as a UNESCO World Heritage site in 1979, the palace, surrounded by an
+                    impressive 900-m (2,953-ft) wall, stands in a compound filled with juniper and wild olive trees,
+                    amid Enqulal Gemb, or Egg Castle, named after its domed roof, the royal archive, many impressive
+                    churches and monastaries and a stable.</p>
+                <img class="img" src="Img/Fasiledes.jpg">
+                <p>These exemplify architecture that is marked by both Hindu and Arab influences, subsequently
+                    transformed by the Baroque style that the Jesuit missionaries brought to Gondar Ethiopia, and have
+                    earned The city is nicknamed “The Camelot of Africa” due to the presence of a group of royal
+                    castles.</p>
+                <iframe frameborder="" height="500"
+                        marginheight=""
+                        marginwidth="0" scrolling="no"
+                        src="https://maps.google.com/maps?q=FASILIDES%20CASTLE&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        WIDTH="300"></iframe>
+            </div>
+
+        </div>
+
+        <div data-role="controlgroup" data-type="horizontal">
+            <a data-icon="calendar" data-role="button" href="#Reminders" id="calander3"
+               style="background-color: #cc005f; color: white;">Add To Calender</a>
+        </div>
+
+        <h3 class="Name4">EMPEROR JOHANNES CASTLE</h3>
+        <h3 class="Location4">yohannes, Ethiopia</h3>
+
+        <p>The castle of Emperor Johannes IV is the main attraction of the city of Makale, located in the north of
+            Ethiopia. The well-preserved royal palace with high battlements is now a historical museum, where the
+            imperial attributes of the XIX century are kept.The castle was built by Emperor Johannes IV in the 1870s
+            as the official royal residence . </p>
+        <img class="img" src="Img/Johannes%20Castle.jpg">
+
+        <div data-content-theme="d" data-role="collapsible-set" data-theme="b">
+            <div data-role="collapsible">
+                <h3>Discover More About Johannes </h3>
+                <h3>Johannes</h3>
+
+                <p>riginally he lived in Debre Favor where one can still see the ruins of the early imperial palace.
+                    Subsequently, Johannes returned to his native region and moved the capital to Makel, where he lived
+                    until his death in 1889 at the Battle of Metema.Besides the fact that Johannes is known as a great
+                    general, he was also a convinced Christian. Therefore, the emperor built his palace surrounded by
+                    many temples to show his commitment to Christianity.</p>
+                <img class="img" src="Img/Yohan.jpg">
+                <p>The architecture of the imperial palace was designed under the strong influence of the Gondar castles
+                    , which served as a home to the emperors of Ethiopia in the 17th-18th centuries.</p>
+                <iframe frameborder="" height="500"
+                        marginheight=""
+                        marginwidth="0" scrolling="no"
+                        src="https://maps.google.com/maps?q=Atse%20Yohannes%20IV%20Museum&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        WIDTH="300"></iframe>
+
+
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a data-icon="calendar" data-role="button" data-theme="a"
+                   href="#Reminders" style="background-color: #cc005f; color: white;" id="calander4">Add To Calender</a>
+            </div>
+        </div>
+        <!--Add more button-->
+        <div data-role="controlgroup" data-type="horizontal">
+            <a data-icon="arrow-d" data-role="button" href="" id="btnAddMore1">Show More</a>
+        </div>
+
+        <div id="2Page">
+            <h3 class="Name5">Blue Nile Falls</h3>
+            <h3 class="Location5">Blue Nile Falls, Ethiopia</h3>
+
+            <p>The Blue Nile Falls is a waterfall on the Blue Nile river in Ethiopia. It is known as Tis Abay in
+                Amharic, meaning "great smoke". It is situated on the upper course of the river, about 30 km downstream
+                from the town of Bahir Dar and Lake Tana. The falls are one of Ethiopia's best known tourist
+                attractions.</p>
+            <img class="img" src="Img/BlueNile.jpg">
+
+            <div data-content-theme="d" data-role="collapsible-set" data-theme="b">
+                <div data-role="collapsible">
+                    <h3>Discover More About Blue Nile </h3>
+                    <h3>Blue Nile, Ethiopia:</h3>
+
+                    <p>The falls are estimated to be between 37 and 45 meters high, consisting of four streams that
+                        originally varied from a trickle in the dry season to over 400 meters wide in the rainy season.
+                        Regulation of Lake Tana now reduces the variation somewhat, and since 2003 a hydro-electric
+                        station has taken much of the flow out of the falls except during the rainy season. The Blue
+                        Nile Falls isolate the ecology of Lake Tana from the ecology of the rest of the Nile, and this
+                        isolation has played a role in the evolution of the endemic fauna of the lake.</p>
+                    <img class="img" src="Img/BlueNile2.jpg">
+                    <p>LA short distance downstream from the falls sits the first stone bridge constructed in Ethiopia,
+                        built at the command of Emperor Susenyos in 1626. According to Manuel de Almeida, stone for
+                        making lime had been found nearby along the tributary Alata, and a craftsman who had come from
+                        India with Afonso Mendes, the Orthodox Patriarch of Ethiopia, supervised the
+                        construction.</p>
+                    <iframe frameborder="" height="500"
+                            marginheight=""
+                            marginwidth="0" scrolling="no"
+                            src="https://maps.google.com/maps?q=Blue%20Nile%20Falls&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            WIDTH="300"></iframe>
+
+                </div>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a data-icon="calendar" data-role="button" data-theme="a"
+                       href="#Reminders" style="background-color: #cc005f; color: white;" id="calander5">Add To
+                        Calender</a>
+                </div>
+                <!--Add more button-->
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a data-icon="arrow-u" data-role="button" href="" id="btnShowLess">Show Less</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Add more button-->
+        <div data-role="controlgroup" data-type="horizontal">
+            <a data-icon="arrow-d" data-role="button" href="" id="btnAddMore2">Show More</a>
+        </div>
+
+        <div id="3Page">
+            <h3 class="Name6">Erta Ale</h3>
+            <h3 class="Location6">Erta Ale, Ethiopia</h3>
+
+            <p>Erta Ale is 613 metres (2,011 ft) high, with one or sometimes two active lava lakes at the summit which
+                occasionally overflow on the south side of the volcano. It is notable for holding the
+                longest-existing lava lake, present since the early years of the twentieth century (1906). Volcanoes
+                with lava lakes are very rare: there are only six in the world.</p>
+            <img class="img" src="Img/Erta_Ale_1.jpg">
+
+            <div data-content-theme="d" data-role="collapsible-set" data-theme="b">
+                <div data-role="collapsible">
+                    <h3>Discover More Name 1 </h3>
+                    <h3>Name 4:</h3>
+
+                    <p>Erta Ale means "smoking mountain" in the local Afar language and its southernmost pit is known
+                        locally as "the gateway to Hell". In 2009, it was mapped by a team from the BBC using
+                        three-dimensional laser techniques, in order for the mapping team to maintain a distance and
+                        avoid the lakes' searingly hot temperatures.</p>
+                    <img class="img" src="Img/Erta_Ale_2.jpg">
+                    <p>There was a major eruption on 25 September 2005 which killed 250 head of livestock and forced
+                        thousands of nearby residents to flee. There was further lava flow in August 2007, forcing
+                        the evacuation of hundreds and leaving two missing. An eruption on 4 November 2008 was
+                        reported by scientists at Addis Ababa University.Another eruption was reported in January
+                        2017.
+                        Erta Ale (or Ertale or Irta'ale) is a continuously active basaltic shield volcano in the Afar
+                        Region of northeastern Ethiopia. It is situated in the Afar Depression, a badland desert area.
+                        Erta Ale is the most active volcano in Ethiopia.</p>
+                    <iframe class="img" frameborder="" height="500"
+                            marginheight=""
+                            marginwidth="0" scrolling="no"
+                            src="https://maps.google.com/maps?q=Erta%20Ale&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            WIDTH="300"></iframe>
+
+                </div>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a data-icon="calendar" data-role="button" data-theme="a"
+                       href="#Reminders" style="background-color: #cc005f; color: white;" id="calander6">Add To
+                        Calender</a>
+                </div>
+                <!--Add more button-->
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a data-icon="arrow-u" data-role="button" href="" id="btnShowLess2">Show Less1</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer style="background-color: #cc005f; color: #fff; " data-position="fixed" data-role="footer" data-theme="b">
+        <h1> Copyright &copy; EthioPlace </h1>
+    </footer>
+
+
+</div>
+
+
+<!--Memo page-->
+<div data-role="page" id="Reminders">
+    <header style="background-color: #cc005f; color: #fff; " data-position="fixed" data-role="header" data-theme="b">
+        <h1>Reminders</h1>
+        <div data-iconpos="top" data-role="navbar">
+            <ul>
+                <li><a data-icon="home" href="#Home">Home</a></li>
+                <li><a data-icon="plus" href="#Places">Places</a></li>
+                <li><a class="ui-btn-active ui-state-persist" data-icon="grid" href="#Reminders">Memo</a></li>
+                <li><a data-icon="calendar" href="#Calendar">Calendar</a></li>
+                <li><a data-icon="user" href="#About">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <section data-role="content">
+
+        <form id="ReminderForm" name="ReminderForm">
+            <label for="EventName">Event Name:</label>
+            <input id="EventName" name="EventName" type="text" value="">
+            <label for="EventLocation">Event Location:</label>
+            <input id="EventLocation" name="EventLocation" type="text" value="">
+            <label for="EventTime">Event Time/Date</label>
+            <input id="EventTime" name="EventTime" type="date">
+
+            <label for="EventTime">Event Description:</label>
+            <textarea id="EventDescription" name="EventDescription"></textarea>
+            <button class="btn" data-inline="true" id="EventSave" name="EventSave"
+                    style="background-color: #cc005f; color: white;" type="submit"> Save
+            </button>
+        </form>
+    </section>
+    <footer style="background-color: #cc005f; color: #fff; " data-position="fixed" data-role="footer" data-theme="b">
+        <h1> Copyright &copy; EthioPlace </h1>
+    </footer>
+
+
+</div>
+
+<!--Calender page-->
+<div data-role="page" id="Calendar">
+    <header style="background-color: #cc005f; color: #fff; " data-position="fixed" data-role="header" data-theme="b">
+        <h1>Calender</h1>
+        <div data-iconpos="top" data-role="navbar">
+            <ul>
+                <li><a data-icon="home" href="#Home">Home</a></li>
+                <li><a data-icon="plus" href="#Places">Places</a></li>
+                <li><a data-icon="grid" href="#Reminders">Memo</a></li>
+                <li><a class="ui-btn-active ui-state-persist" data-icon="calendar" href="#Calendar">Calendar</a></li>
+                <li><a data-icon="user" href="#About">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <section data-role="content">
+        <h1 class="Ethio_h2">My Calender</h1>
+        <div data-role="controlgroup">
+            <ul data-inset="true" data-role="listview" data-icon="edit" id="ListView">
+
+            </ul>
+        </div>
+    </section>
+    <footer style="background-color: #cc005f; color: #fff;" data-position="fixed" data-role="footer" data-theme="b">
+        <h1> Copyright &copy; EthioPlace </h1>
+    </footer>
+
+
+</div>
+
+
+<!--about page-->
+<div data-role="page" id="About">
+    <header style="background-color: #cc005f; color: #fff; " data-position="fixed" data-role="header" data-theme="b">
+        <h1>About</h1>
+        <div data-iconpos="top" data-role="navbar">
+            <ul>
+                <li><a data-icon="home" href="#Home">Home</a></li>
+                <li><a data-icon="plus" href="#Places">Places</a></li>
+                <li><a data-icon="grid" href="#Reminders">Memo</a></li>
+                <li><a data-icon="calendar" href="#Calendar">Calendar</a></li>
+                <li><a class="ui-btn-active ui-state-persist" data-icon="user" href="#About">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <section data-role="content">
+        <img src="Img/About.png">
+
+        <div data-content-theme="d" data-role="collapsible-set" data-theme="c">
+            <div data-role="collapsible">
+                <h3>Personal Profile</h3>
+                <div class="tablerow">
+                    <div class="left-table">Name:</div>
+                    <div class="right-table">Abenezer Tesma</div>
+                </div>
+                <div class="tablerow">
+                    <div class="left-table">Age:</div>
+                    <div class="right-table">21</div>
+                </div>
+                <div class="tablerow">
+                    <div class="left-table">Gender:</div>
+                    <div class="right-table">Male</div>
+                </div>
+                <div class="tablerow">
+                    <div class="left-table">Location:</div>
+                    <div class="right-table">Ontario</div>
+                </div>
+                <div class="tablerow">
+                    <div class="left-table">Job:</div>
+                    <div class="right-table">Student</div>
+                </div>
+                <div class="tablerow">
+                    <div class="left-table">Bio:</div>
+                    <div class="right-table">I am currently enrolled at Conestoga College for Computer Programming.
+                        Deeply interested in Web Design/Development.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="collapsible">
+            <h3>App Information</h3>
+            <p>This App will help people with adventures in extraordinary destinations. The App exclusive focus on
+                Ethiopia means that
+                whatever kind of adventure you're looking for, This App can help. </p>
+        </div>
+        <div data-role="collapsible">
+            <h3>Contact Information</h3>
+            <div class="tablerow">
+                <div class="left-table">Email:</div>
+                <div class="right-table"><a href="mailto:abenezertesma@gmail.com.">Email</a></div>
+            </div>
+            <div class="tablerow">
+                <div class="left-table">Phone:</div>
+                <div class="right-table"><a href="tel:+1800229933">Call free!</a></div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #cc005f; color: #fff; " data-position="fixed" data-role="footer" data-theme="b">
+        <h1> Copyright &copy; EthioPlace </h1>
+    </footer>
+
+</div>
+<!--Edit page-->
+<div data-role="page" id="Edit">
+    <header style="background-color: #cc005f; color: #fff; " data-position="fixed" data-role="header" data-theme="b">
+        <h1>Edit Calendar</h1>
+        <div data-iconpos="top" data-role="navbar">
+            <ul>
+                <li><a data-icon="home" href="#Home">Home</a></li>
+                <li><a data-icon="plus" href="#Places">Places</a></li>
+                <li><a data-icon="grid" href="#Reminders">Memo</a></li>
+                <li><a class="ui-btn-active ui-state-persist" data-icon="calendar" href="#Calendar">Calendar</a></li>
+                <li><a data-icon="user" href="#About">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <section data-role="content">
+
+        <form id="EditForm" name="EditForm">
+            <label for="EditName">Event Name:</label>
+            <input id="EditName" name="EditName" type="text" value="">
+            <label for="EditLocation">Event Location:</label>
+            <input id="EditLocation" name="EditLocation" type="text" value="">
+            <label for="EditDate">Event Time/Date</label>
+            <input id="EditDate" name="EditDate" type="date">
+
+            <label for="EditDescription">Event Description:</label>
+            <textarea id="EditDescription" name="EditDescription"></textarea>
+
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <button class="ui-btn-active ui-state-persist" id="BtnUpdate" name="BtnUpdate" type="button"
+                        style="background-color: Green; color: black;"> Update
+                </button>
+                <button id="BtnDelete" name="BtnDelete" type="button" style="background-color: Yellow; color: black;">
+                    Delete
+                </button>
+                <button id="BtnCancel" name="BtnCancel" type="button" style="background-color: red; color: black;"
+                        onclick="window.location.href = '#Calendar';"> Cancel
+                </button>
+
+            </fieldset>
+
+        </form>
+    </section>
+    <footer style="background-color: #cc005f; color: #fff; " data-position="fixed" data-role="footer" data-theme="b">
+        <h1> Copyright &copy; EthioPlace </h1>
+    </footer>
+
+
+</div>
+
+
+</body>
+</html>
+
